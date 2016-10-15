@@ -313,7 +313,7 @@ public class VGet {
 
             Integer idupcount = 0;
 
-            String sfilename = replaceBadChars(info.getTitle());
+            String sfilename = replaceBadChars(info.getId());
 
             sfilename = maxFileNameLength(sfilename);
 

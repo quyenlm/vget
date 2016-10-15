@@ -18,6 +18,7 @@ public class VideoInfo {
     private URL source;
     private List<VideoFileInfo> info = new ArrayList<VideoFileInfo>();
     private String title;
+    private String id;
     private URL icon;
 
     // states, three variables
@@ -56,6 +57,14 @@ public class VideoInfo {
         icon = null;
         exception = null;
         delay = 0;
+    }
+
+    synchronized public String getId() {
+        return id;
+    }
+
+    synchronized public void setId(String id) {
+        this.id = id;
     }
 
     synchronized public String getTitle() {
